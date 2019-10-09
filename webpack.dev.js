@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: "development",
 
   output: {
-    filename: "index.js", // Cache Bursting using webpack
+    filename: "[name].bundle.js", // Cache Bursting using webpack
     path: path.resolve(__dirname, "public")
   }
 });

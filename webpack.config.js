@@ -1,12 +1,12 @@
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: { main: "./src/index.js", vendor: "./src/vendor.js" },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.html$/i,
