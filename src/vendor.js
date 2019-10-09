@@ -1,1 +1,2 @@
+$primary: "orange";
 import "bootstrap";
