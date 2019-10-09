@@ -1,4 +1,4 @@
-class ComponentServices {
+export class ComponentServices {
   constructor() {
     this.numberOneInput = document.getElementById("numberOne");
     this.numberTwoInput = document.getElementById("numberTwo");
@@ -7,15 +7,15 @@ class ComponentServices {
     this.errorBox = document.getElementById("error");
   }
 
-  getInputs = () => {
+  getInputs() {
     return [this.numberOneInput.value, this.numberTwoInput.value];
-  };
+  }
 
-  setResult = str => {
+  setResult(str) {
     this.resultDiv.innerText = str;
-  };
+  }
 
-  onClick = cb => {
+  onClick(cb) {
     this.addValuesButton.addEventListener("click", cb);
-  };
+  }
 }
